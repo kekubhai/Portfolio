@@ -1,6 +1,5 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 interface Pulse {
   children?: React.ReactNode;
@@ -27,14 +26,14 @@ const PulseAvatar = React.memo(function Ripple({
         )}
       >
         {Array.from({ length: numCircles }, (_, i) => {
-          const size = mainCircleSize + i * 15; // Larger circles as they go out
-          const opacity = mainCircleOpacity - i * 0.10; // Fading effect for outer circles
+          const size = mainCircleSize + i * 15; 
+          const opacity = mainCircleOpacity - i * 0.10; 
           const animationDelay = `${i * 0.3}s`;
 
           if (i === 0) {
             return (
               <div
-                className="absolute rounded-full ripple z-10"
+                className="ripple absolute z-10 rounded-full"
                 style={{
                   width: `${size}px`,
                   height: `${size}px`,
@@ -53,7 +52,7 @@ const PulseAvatar = React.memo(function Ripple({
           return (
             <div
               key={i}
-              className="absolute rounded-full bg-base/20 animate-ripple"
+              className="absolute animate-ripple rounded-full bg-base/20"
               style={{
                 width: `${size}px`,
                 height: `${size}px`,

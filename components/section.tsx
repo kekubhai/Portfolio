@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable tailwindcss/migration-from-tailwind-2 */
 "use client"
 
 import { useState } from "react"
@@ -14,14 +16,14 @@ import { siteConfig } from "@/config/site"
 export const IntroSection = () => {
   return (
     <>
-      <div className="relative group w-[180px] h-[180px] mb-8">
+      <div className="group relative mb-8 h-[180px] w-[180px]">
 
-        <div className="absolute cursor-pointer w-full h-full rounded-full transition-opacity duration-300 group-hover:ring-0">
+        <div className="absolute h-full w-full cursor-pointer rounded-full transition-opacity duration-300 group-hover:ring-0">
           <PulseAvatar>
             <Image
               src={siteConfig.avatar_image}
-              className="rounded-full object-cover cursor-pointer"
-              layout="fill" // Ensures the image fills the container while maintaining aspect ratio
+              className="cursor-pointer rounded-full object-cover"
+              layout="fill"
               alt="avatar_picture"
             />
           </PulseAvatar>
@@ -29,43 +31,43 @@ export const IntroSection = () => {
         <PulseAvatar>
           <Image
             src={"/assets/profile-pic.jpg"}
-            className="absolute rounded-full transition-opacity duration-300 opacity-0 group-hover:opacity-100 object-cover"
+            className="absolute rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             layout="fill" // Ensures the image fills the container while maintaining aspect ratio
             alt="profile_picture"
           />
         </PulseAvatar>
       </div >
-      <div className="text-3xl text-white font-extrabold">
-        Hey, I'm Pratik{" "}
+      <div className="text-3xl font-extrabold text-white">
+        Hey, I'm Anirban{" "}
         <span className="animate-shake">
           <span className="animate-pulse">👋</span>
         </span>
       </div>
 
-      <div className="text-gray-500 mt-2  text-md">
+      <div className="text-md mt-2  text-gray-500">
         I'm a <>fullstack developer 🚀</>, <>optimist 🧠</>, and a{" "}
-        <>open source advocate 🥑</>. I'm currently working on my OS app called{" "}
+        <>open source advocate 🥑</>. I'm currently working on my Blockchain website called{" "}
         <Link
-          className="text-white hover:underline hover:font-medium"
+          className="text-white hover:font-medium hover:underline"
           href="https://sifusecurity.com"
           target="_blank"
         >
-          sifusecurity.com
+        Frame-Fi
         </Link>{" "}
         and{" "}
         <Link
-          className="text-white hover:underline hover:font-medium"
+          className="text-white hover:font-medium hover:underline"
           href="https://dashlit.byarclabs.com"
           target="_blank"
         >
-          dashlit.com
+          Orbit-X
         </Link>{" "}
         and contributing to multiple open source projects.
       </div>
 
-      <div className="text-gray-500  text-md">
+      <div className="text-md  text-gray-500">
         I mainly build with{" "}
-        <span className="font-medium">React, Node, GO, AWS and Solidity </span>
+        <span className="font-medium"> Next,React, Node, Typescript and Solidity </span>
         but I'm always learning new tools & technologies.
       </div>
 
@@ -79,34 +81,34 @@ export const ProjectSection = () => {
     <>
       {" "}
       <div className="mt-12">
-        <div className="text-3xl text-white font-bold">Projects.</div>
-        <div className="text-gray-500 mt-2 mb-2  text-md">
+        <div className="text-3xl font-bold text-white">Projects.</div>
+        <div className="text-md my-2 text-gray-500">
           things I have created
         </div>
         {PersonalProjectData.map((project: ProjectData) => {
           return (
             <div
               onClick={() => window.open(project.titleLink, "_blank")}
-              className="mt-8 base-card p-4 rounded-3xl cursor-pointer bg-opacity-50 backdrop-blur-md">
+              className="base-card mt-8 cursor-pointer rounded-3xl bg-opacity-50 p-4 backdrop-blur-md">
               <Link
                 href={project.titleLink}
                 target="_blank"
-                className="text-white hover:underline hover:font-medium"
+                className="text-white hover:font-medium hover:underline"
               >
                 <div className="text-md font-medium text-white">
                   {project.title}
                 </div>
               </Link>
-              <div className="text-md text-gray-500 space-y-2">
-                {/* // map over description and show it */}
+              <div className="text-md space-y-2 text-gray-500">
+           
                 {project.description.map((description: string) => {
                   return (
                     <div className="text-md text-gray-500">{description}</div>
                   )
                 })}
               </div>
-              {/* // show all the hastags */}
-              <div className="text-md text-gray-500 mt-1 space-x-1">
+             
+              <div className="text-md mt-1 space-x-1 text-gray-500">
                 {project.hastags.map((tag: string) => {
                   return <Badge variant="outline" className="base-card">#{tag}</Badge>
                 })}
@@ -115,15 +117,15 @@ export const ProjectSection = () => {
           )
         })}
 
-        <div className="base-card p-4 rounded-3xl bg-opacity-50 backdrop-blur-md mt-6">
-          <div className="text-white text-md underline font-medium">
+        <div className="base-card mt-6 rounded-3xl bg-opacity-50 p-4 backdrop-blur-md">
+          <div className="text-md font-medium text-white underline">
             Projects I have built working with companies
           </div>
-          <div className="text-gray-500  text-md hover:none mt-2">
+          <div className="text-md  hover:none mt-2 text-gray-500">
             <div className="mb-2">
               Currently working with{" "}
               <Link
-                className="text-white  hover:underline hover:font-medium"
+                className="text-white  hover:font-medium hover:underline"
                 href="https://securly.com/"
               >
                 Securly
@@ -135,7 +137,7 @@ export const ProjectSection = () => {
             Built{" "}
             <Link
               href="https://www.velocity.in/payments"
-              className="text-white  hover:underline hover:font-medium"
+              className="text-white  hover:font-medium hover:underline"
             >
               Payments
             </Link>{" "}
@@ -143,14 +145,14 @@ export const ProjectSection = () => {
             managemenet etc) from scratch and{" "}
             <Link
               href="velocity.in/revenue-based-financing/"
-              className="text-white  hover:underline hover:font-medium"
+              className="text-white  hover:font-medium hover:underline"
             >
               Finance
             </Link>{" "}
             (Loan management system) while working with{" "}
             <Link
               href="https://www.velocity.in/"
-              className="text-white  hover:underline hover:font-medium"
+              className="text-white  hover:font-medium hover:underline"
             >
               Velocity.
             </Link>{" "}
@@ -160,11 +162,11 @@ export const ProjectSection = () => {
             </span>
           </div>
 
-          <div className="text-gray-500  mt-2 text-md hover:none">
+          <div className="text-md  hover:none mt-2 text-gray-500">
             Built{" "}
             <Link
               href="https://www.paletteedu.org/"
-              className="text-white  hover:underline hover:font-medium"
+              className="text-white  hover:font-medium hover:underline"
             >
               Palette
             </Link>{" "}
@@ -172,7 +174,7 @@ export const ProjectSection = () => {
             while working with{" "}
             <Link
               href="https://webknot.in/"
-              className="text-white  hover:underline hover:font-medium"
+              className="text-white  hover:font-medium hover:underline"
             >
               Webknot.
             </Link>{" "}
@@ -191,20 +193,20 @@ export const BlogSection = () => {
   return (
     <>
       <div className="mt-12">
-        <div className="text-2xl text-white  font-bold ">Blogs</div>
-        <div className="text-gray-500 mt-2 mb-2  text-md">
+        <div className="text-2xl font-bold  text-white ">Blogs</div>
+        <div className="text-md my-2 text-gray-500">
           I like writing about software development, web3 and producitivity.
         </div>
 
         <Link
           href="https://blogs.tiwaripratik.com/lets-talk-about-react-performance"
           target="__blank"
-          className="hover:underline hover:font-medium transition-all"
+          className="transition-all hover:font-medium hover:underline"
         >
-          <div className="text-white   text-md mt-6 underline font-medium">
+          <div className="text-md   mt-6 font-medium text-white underline">
             Let's talk about react performance ⚛️
           </div>
-          <div className="text-gray-500  text-md hover:none">
+          <div className="text-md  hover:none text-gray-500">
             Some of the tips and tricks to improve your react app performance.
           </div>
         </Link>
@@ -212,12 +214,12 @@ export const BlogSection = () => {
         <Link
           href="https://blogs.tiwaripratik.com/mono-respositories-in-jsts-what-why-and-how-with-nx"
           target="__blank"
-          className="hover:underline hover:font-medium transition-all"
+          className="transition-all hover:font-medium hover:underline"
         >
-          <div className="text-white   text-md mt-6 underline font-medium">
+          <div className="text-md   mt-6 font-medium text-white underline">
             Mono Respositories in JS/TS. What? Why? and How? (with Nx)
           </div>
-          <div className="text-gray-500  text-md hover:none">
+          <div className="text-md  hover:none text-gray-500">
             Sharing about monorepos and how to use them in your projects and
             thier pros and cons.
           </div>
@@ -226,13 +228,13 @@ export const BlogSection = () => {
         <Link
           href="https://blogs.tiwaripratik.com/understanding-reacts-ui-rendering-process-understanding-virtual-dom-in-depth"
           target="__blank"
-          className="hover:underline hover:font-medium transition-all"
+          className="transition-all hover:font-medium hover:underline"
         >
-          <div className="text-white   text-md mt-6 underline font-medium">
+          <div className="text-md   mt-6 font-medium text-white underline">
             Understanding React's UI Rendering Process (understanding virtual
             dom in depth)
           </div>
-          <div className="text-gray-500  text-md hover:none">
+          <div className="text-md  hover:none text-gray-500">
             Sharing about how react works under the hood.
           </div>
         </Link>
@@ -241,7 +243,7 @@ export const BlogSection = () => {
       <Link
         href="/blogs"
         target="__blank"
-        className="flex gap-2 text-white  text-md mt-6 cursor-pointer hover:underline font-medium"
+        className="text-md mt-6 flex  cursor-pointer gap-2 font-medium text-white hover:underline"
       >
         <Icons.open />
         <span>More blogs</span>{" "}

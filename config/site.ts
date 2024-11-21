@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Pratik",
   description:
     "Love to build coooool things.",
-  avatar_image: "https://avatars.githubusercontent.com/u/64960569?v=4",
+  avatar_image: "https://assets.pinterest.com/ext/embed.html?id=295619163057465290",
   mainNav: [
     {
       title: "Home",
@@ -12,8 +12,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    linkedin: "https://www.linkedin.com/in/pratiktiwari12/",
-    twitter: "https://twitter.com/pratikcodes_",
-    github: "https://github.com/pratik-codes",
+    linkedin: "https://www.linkedin.com/in/anirban-ghosh010",
+    twitter: "https://twitter.com/onirbanhere_",
+    github: "https://github.com/kekubhai",
   },
 }

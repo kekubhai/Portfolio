@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <section
       className={
-        "container grid mt-[8rem] items-center gap-6 pb-8 pt-6 md:py-10"
+        "container mt-[8rem] grid items-center gap-6 pb-8 pt-6 md:py-10"
       }
     >
       <FadeInUpBox>
@@ -18,7 +18,7 @@ function IndexPage() {
         <Link
           href="https://nextjs.org/"
           target="__blank"
-          className="flex gap-2 cursor-pointer hover:font-medium my-[10rem]"
+          className="my-[10rem] flex cursor-pointer gap-2 hover:font-medium"
         >
           Made with Next.js
           <svg
