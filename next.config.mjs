@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: [
+      
       "www.assets.pinterest.com",
       "www.pinterest.com",
       "pbs.twimg.com",

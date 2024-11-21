@@ -177,15 +177,12 @@ export interface ProjectData {
 
 export const PersonalProjectData: Array<ProjectData> = [
   {
-    title: "Sifu Security",
-    titleLink: "https://sifusecurity.com/",
+    title: "LinkRoom",
+    titleLink: "https://linkroom-livid.vercel.app/",
     description: [
-      "Our app protects Solana users from malicious transactions and smart contracts. It offers a Contract Address Checker, Smart Contract Auditing, and Simulated Transaction Validator to ensure secure interactions, providing detailed insights and safety before committing to any transaction.",
-      "Won $5000+ in grants from solana foundation",
+      "Welcome to LinkRoom! I created this platform to make sharing and discovering valuable resources within communities simple and efficient. With a clean interface and seamless functionality, LinkRoom is designed to foster collaboration and connect users with the information they need.",
     ],
     hastags: [
-      "python",
-      "node",
       "nextjs/reactjs",
       "solana",
       "blockchain",
@@ -193,11 +190,11 @@ export const PersonalProjectData: Array<ProjectData> = [
     ],
   },
   {
-    title: "Dashlit",
-    titleLink: "https://www.dashlit.com/",
+    title: "Orbit-X",
+    titleLink: "https://orbitx-ecru.vercel.app/",
     description: [
-      "An open source browser extension to boost your productivity and browser experience.",
+      "Welcome to **OrbitX**! I created this web-based wallet to simplify managing your digital assets securely and efficiently. With an intuitive interface and robust features, OrbitX is designed to make your transactions smooth, reliable, and user-friendly.",
     ],
-    hastags: ["reactjs", "browser-extension", "productivity"],
+    hastags: ["reactjs/nextjs", "finance","#Blockchain" ,"productivity"],
   },
 ]

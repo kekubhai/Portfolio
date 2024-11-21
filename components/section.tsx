@@ -22,17 +22,19 @@ export const IntroSection = () => {
           <PulseAvatar>
             <Image
               src={siteConfig.avatar_image}
+              width={1000}
+              height={100}
               className="cursor-pointer rounded-full object-cover"
-              layout="fill"
               alt="avatar_picture"
             />
           </PulseAvatar>
         </div>
         <PulseAvatar>
           <Image
-            src={"/assets/profile-pic.jpg"}
+            src={"/assets/image.png"}
             className="absolute rounded-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-            layout="fill" // Ensures the image fills the container while maintaining aspect ratio
+           height={600}
+           width={2000}
             alt="profile_picture"
           />
         </PulseAvatar>
@@ -49,7 +51,7 @@ export const IntroSection = () => {
         <>open source advocate 🥑</>. I'm currently working on my Blockchain website called{" "}
         <Link
           className="text-white hover:font-medium hover:underline"
-          href="https://sifusecurity.com"
+          href="https://github.com/kekubhai/framefi"
           target="_blank"
         >
         Frame-Fi
@@ -57,7 +59,7 @@ export const IntroSection = () => {
         and{" "}
         <Link
           className="text-white hover:font-medium hover:underline"
-          href="https://dashlit.byarclabs.com"
+          href="https://orbitx-ecru.vercel.app/"
           target="_blank"
         >
           Orbit-X
@@ -117,72 +119,7 @@ export const ProjectSection = () => {
           )
         })}
 
-        <div className="base-card mt-6 rounded-3xl bg-opacity-50 p-4 backdrop-blur-md">
-          <div className="text-md font-medium text-white underline">
-            Projects I have built working with companies
-          </div>
-          <div className="text-md  hover:none mt-2 text-gray-500">
-            <div className="mb-2">
-              Currently working with{" "}
-              <Link
-                className="text-white  hover:font-medium hover:underline"
-                href="https://securly.com/"
-              >
-                Securly
-              </Link>
-              , building the core extension products to save kids life. Also
-              working on migrating the backend to Golang along with many other
-              feature development and tech debts. <br />
-            </div>
-            Built{" "}
-            <Link
-              href="https://www.velocity.in/payments"
-              className="text-white  hover:font-medium hover:underline"
-            >
-              Payments
-            </Link>{" "}
-            (An app used for making payments, vendor management, Invoice
-            managemenet etc) from scratch and{" "}
-            <Link
-              href="velocity.in/revenue-based-financing/"
-              className="text-white  hover:font-medium hover:underline"
-            >
-              Finance
-            </Link>{" "}
-            (Loan management system) while working with{" "}
-            <Link
-              href="https://www.velocity.in/"
-              className="text-white  hover:font-medium hover:underline"
-            >
-              Velocity.
-            </Link>{" "}
-            Worked mainly on the frontend side in{" "}
-            <span className="font-medium">
-              react, microfrontends, monorepos and typescript.
-            </span>
-          </div>
-
-          <div className="text-md  hover:none mt-2 text-gray-500">
-            Built{" "}
-            <Link
-              href="https://www.paletteedu.org/"
-              className="text-white  hover:font-medium hover:underline"
-            >
-              Palette
-            </Link>{" "}
-            (university management app) from scratch and and many other projects
-            while working with{" "}
-            <Link
-              href="https://webknot.in/"
-              className="text-white  hover:font-medium hover:underline"
-            >
-              Webknot.
-            </Link>{" "}
-            Worked on the backend as well as frontend side in{" "}
-            <span className="font-medium">react, node(nest.js), AWS. </span>
-            Built the service and managed deployment as well as the infrastucture.
-          </div>
-        </div>
+       
       </div>
       {/* <hr className="mt-12" /> */}
     </>

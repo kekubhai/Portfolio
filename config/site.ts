@@ -1,10 +1,10 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Pratik",
+  name: "Anir",
   description:
     "Love to build coooool things.",
-  avatar_image: "https://assets.pinterest.com/ext/embed.html?id=295619163057465290",
+  avatar_image: "/assets/341727.png",
   mainNav: [
     {
       title: "Home",
@@ -13,7 +13,7 @@ export const siteConfig = {
   ],
   links: {
     linkedin: "https://www.linkedin.com/in/anirban-ghosh010",
-    twitter: "https://twitter.com/onirbanhere_",
+    twitter: "https://twitter.com/onirbanhere",
     github: "https://github.com/kekubhai",
   },
 }
