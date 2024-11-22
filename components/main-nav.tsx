@@ -13,8 +13,8 @@ export function MainNav({ changeScale }: { changeScale: (scale: number) => void 
       label: "blogs",
     },
     {
-      id: "Tech",
-      label: "Tech",
+      id: "tech",
+      label: "tech",
     },
    
   ]
