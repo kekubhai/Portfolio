@@ -121,7 +121,7 @@ export const ProjectSection = () => {
 
        
       </div>
-      {/* <hr className="mt-12" /> */}
+      
     </>
   )
 }

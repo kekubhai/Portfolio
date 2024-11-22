@@ -1,8 +1,9 @@
+/* eslint-disable tailwindcss/enforces-negative-arbitrary-values */
 const ColorGlow = () => {
   return (
     <div
-      className="rounded-full fixed top-0 right-0 bg-base bg-gradient-to-b from-base to-[#D14309] filter
-      h-[50vh] w-[50vw] blur-[90px] md:blur-[200px] -mr-[20vw] -mt-40"
+      className="bg-gradient-to-b fixed right-0 top-0 -mr-[20vw] -mt-40 h-[50vh] w-[50vw] rounded-full
+      bg-base from-base to-[#113cb1] blur-[90px] md:blur-[200px]"
     ></div>
   )
 }

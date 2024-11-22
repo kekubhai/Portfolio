@@ -45,7 +45,7 @@ const TabsComponent = ({
           {activeTab === tab.id && (
             <motion.span
               layoutId="bubble"
-              className="absolute inset-0 z-10 bg-transparent-white mix-blend-difference rounded-full"
+              className="absolute inset-0 z-10 rounded-full bg-transparent-white mix-blend-difference"
               transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               variants={{
                 initial: { scale: 1 },
@@ -53,7 +53,7 @@ const TabsComponent = ({
               }}
             />
           )}
-          <span className="font-bold text-md">{tab.label}</span>
+          <span className="text-md font-bold">{tab.label}</span>
         </button>
       ))}
     </div>

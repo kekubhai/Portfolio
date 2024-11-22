@@ -13,13 +13,10 @@ export function MainNav({ changeScale }: { changeScale: (scale: number) => void 
       label: "blogs",
     },
     {
-      id: "talks",
-      label: "talks",
+      id: "Tech",
+      label: "Tech",
     },
-    {
-      id: "blocks",
-      label: "blocks",
-    },
+   
   ]
 
   return (
