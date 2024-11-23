@@ -25,8 +25,8 @@ export const TalkData = [
   {
     place: "",
     logoImage:
-      "https://pbs.twimg.com/profile_images/1671952285730238464/SJ9ev-00_400x400.jpg",
-    link: "/talks/generics-in-typescript",
+      "",
+    link: "",
     title:
       ".",
     content_des:
@@ -39,23 +39,19 @@ export const TalkData = [
     ],
   },
   {
-    place: "React Pune",
-    link: "/talks/building-frameworky-things",
+    place: "",
+    link: "",
     logoImage:
-      "https://pbs.twimg.com/profile_images/1628286577482018817/P2qjUGx5_400x400.jpg",
+      "",
     title:
-      "Building frameworky things in react from scratch. SSR, file-based routing and server-side data fetching like next.js",
+      "",
     content_des:
-      "Spoke at React Pune about Building Server side rendering, server side data fetching and file based routing. Did a live demo building all of that from scratch.",
+      "",
     images: [
-      "/assets/react_pune/IMG_3684.jpg",
-      "/assets/react_pune/IMG_3685.jpg",
-      "/assets/react_pune/IMG_3695.jpg",
+      "",
     ],
     twitter_embeds: [
-      "1682638222206316545",
-      "1682796601025392640",
-      "1682678900621492224",
+      "",
     ],
   },
 ]

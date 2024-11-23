@@ -48,7 +48,7 @@ const TalkDetails = ({ talkData }: any) => {
             📍 {place}
           </div>
           <hr className="my-12" />
-          <div className="text-3xl font-bold mb-8">Images</div>
+          <div className="mb-8 text-3xl font-bold">Images</div>
           <div className="grid grid-auto md:grid-cols-2 gap-8">
             {images.map((image: any) => (
               <Image
