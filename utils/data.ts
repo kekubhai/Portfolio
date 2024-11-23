@@ -28,23 +28,14 @@ export const TalkData = [
       "https://pbs.twimg.com/profile_images/1671952285730238464/SJ9ev-00_400x400.jpg",
     link: "/talks/generics-in-typescript",
     title:
-      "Generics in Typescript. Build powerfull abstraction with typescript and say goodbye to any.",
+      ".",
     content_des:
-      "Spoke at React Mumbai about Generics in Typescript. How to build powerfull abstraction with typescript and say goodbye to any.",
+      "",
     images: [
-      "/assets/react_mumbai/REACT_MUMBAI_1.jpeg",
-      "/assets/react_mumbai/REACT_MUMBAI_2.jpeg",
-      "/assets/react_mumbai/REACT_MUMBAI_6.jpeg",
-      "/assets/react_mumbai/REACT_MUMBAI_7.jpeg",
-      "/assets/react_mumbai/REACT_MUMBAI_3.jpeg",
-      "/assets/react_mumbai/REACT_MUMBAI_5.jpeg",
-      "/assets/react_mumbai/REACT_MUMBAI_4.jpeg",
+      "",
     ],
     twitter_embeds: [
-      "1692788188887253248",
-      "1692846506368225749",
-      "1694573356467576944",
-      "1692864425001365985",
+      "",
     ],
   },
   {
@@ -105,5 +96,13 @@ export const PersonalProjectData: Array<ProjectData> = [
       "Frame-Fi is our new age photo exhibition centre where you can share your photographs and vote for the best ones, ",
     ],
     hastags: ["reactjs/nextjs", "finance","#Blockchain" ,"Hobby", "Photography"],
+  },
+  {
+    title: "Green-Lens_Ai",
+    titleLink: "https://github.com/kekubhai/greenlens-ai",
+    description: [
+      "GreenLens-AI uses AI-driven image recognition to monitor plant health. It detects diseases, pests, and nutrient deficiencies in real-time, providing actionable insights to help maintain healthy plants. With a focus on sustainability, GreenLens-AI is designed for gardeners, farmers, and anyone interested in promoting plant well-being ",
+    ],
+    hastags: ["reactjs/nextjs", "finance","#Blockchain" ,"Nature", "Reuse-Resources"],
   },
 ]

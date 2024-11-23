@@ -11,8 +11,8 @@ const Talks = () => {
     <section className="container mt-[8rem] grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="p-4">
         <div className="mb-4 text-5xl font-extrabold">Talks.</div>
-        <div className="text-gray-600">
-          Watch my presentations on cutting-edge tech, software engineering, blockchain, and programming insights.
+        <div className="text-gray-600 text-3xl">
+working on it to deliver my tech talk learnings
         </div>
       </div>
       <FadeInUpBox>
