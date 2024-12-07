@@ -76,6 +76,13 @@ export const PersonalProjectData: Array<ProjectData> = [
       "blockchain",
       "security",
     ],
+  }, {
+    title: "Kakshya-Kul ",
+    titleLink: "https://kakshya-kul.vercel.app/",
+    description: [
+      "Get Started with KakshyaKul to make efficient decisions for selection of your college. Try this and make your choices based on different parameters ,financial-aid your scores and more. ",
+    ],
+    hastags: ["reactjs/nextjs", "Education","AI" ,"User0Benefits"],
   },
   {
     title: "Orbit-X",
@@ -86,7 +93,7 @@ export const PersonalProjectData: Array<ProjectData> = [
     hastags: ["reactjs/nextjs", "finance","#Blockchain" ,"productivity"],
   },
   {
-    title: "Frame-FI",
+    title: "Frame-FI(working on)",
     titleLink: "https://github.com/kekubhai/framefi/",
     description: [
       "Frame-Fi is our new age photo exhibition centre where you can share your photographs and vote for the best ones, ",

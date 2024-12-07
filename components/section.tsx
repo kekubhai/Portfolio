@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/enforces-shorthand */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable tailwindcss/migration-from-tailwind-2 */
 "use client"
@@ -26,7 +27,7 @@ export const IntroSection = () => {
               height={100}
               className="cursor-pointer rounded-full object-cover"
               alt="avatar_picture"
-            />
+            /> 
           </PulseAvatar>
         </div>
         <PulseAvatar>
