@@ -18,6 +18,16 @@ export const BlogData: any = [
       "",
     hastags: ["CPP", "Data Structure", "Leetcode",],
   },
+  {
+    title:
+      "Why should you use tRPCs in your next Project",
+    description:
+      " Learn about protocols and backend services that can be used in your next project",
+    url: "https://medium.com/@anirbanghosh060/why-should-you-use-trpc-in-your-typescript-project-fd519b0948c4",
+    imageSrc:
+      "",
+    hastags: ["tRPCs", "Graphql", "RestAPIs",],
+  },
   
 ]
 
@@ -92,13 +102,14 @@ export const PersonalProjectData: Array<ProjectData> = [
     ],
     hastags: ["reactjs/nextjs", "finance","#Blockchain" ,"productivity"],
   },
+
   {
-    title: "Frame-FI(working on)",
-    titleLink: "https://github.com/kekubhai/framefi/",
+    title: "Her-Birthday25",
+    titleLink: "https://her-birthday25.vercel.app/",
     description: [
-      "Frame-Fi is our new age photo exhibition centre where you can share your photographs and vote for the best ones, ",
+      "This is just a basic frontend website to gift to my girlfriend on her birthday. This is to brush up my skills and make her feel special.",
     ],
-    hastags: ["reactjs/nextjs", "finance","#Blockchain" ,"Hobby", "Photography"],
+    hastags: ["reactjs/nextjs", "love","Anime" ,"She", "Memories"],
   },
   {
     title: "Green-Lens_Ai",

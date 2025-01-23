@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button"
 
 const Blogs = () => {
   return (
-    <section className="container mt-[8rem] grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <section className="container  grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="p-4">
         <div className="mb-4 text-5xl font-extrabold">Blogs.</div>
         <div className="text-gray-600">
@@ -19,15 +19,33 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="flex items-center">
-        <Link target="__blank" href={"https://www.notion.so/b5dd7453f56a4db3a63fe952ab158066"}>
-          <Button variant={"destructive"}>
-     
-            Notion
-          </Button>
-        </Link>
-       
-      </div>
+      <div className="mx-4 px-4 space-x-4 flex">
+  <Link 
+    target="__blank" 
+    href="https://www.notion.so/b5dd7453f56a4db3a63fe952ab158066" 
+    className="inline-block"
+  >
+    <Button 
+      variant="secondary" 
+      className="  text-white py-2 px-6 rounded-md shadow-md transition-transform transform hover:scale-105"
+    >
+      Notion
+    </Button>
+  </Link>
+  <Link 
+    target="__blank" 
+    href="https://www.notion.so/b5dd7453f56a4db3a63fe952ab158066" 
+    className="inline-block"
+  >
+    <Button 
+      variant="destructive" 
+      className=" text-white py-2 px-6 rounded-md shadow-md transition-transform transform hover:scale-105"
+    >
+      Medium
+    </Button>
+  </Link>
+</div>
+
       <div className="grid-col-2 mx-4 my-12 grid space-y-10">
         <AnimatePresence>
           {BlogData.map((item: any) => (
