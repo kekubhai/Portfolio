@@ -13,6 +13,7 @@ const nextConfig = {
       "miro.medium.com",
       "dev-to-uploads.s3.amazonaws.com",
       "avatars.githubusercontent.com",
+      "ik.imagekit.io",
     ],
   },
   reactStrictMode: true,

@@ -71,9 +71,45 @@ export interface ProjectData {
   titleLink: string
   description: string[]
   hastags: string[]
+  images?: string[]
+  
 }
 
 export const PersonalProjectData: Array<ProjectData> = [
+  {
+    title: "Calibrate-01",
+    titleLink: "https://github.com/kekubhai/calibrate-o1",
+    description: [
+      "Calibrate-01 is a mobile based platform which optimised web socket implementation real time stock data and trading.  "],
+    hastags: [
+      "react-native",
+      "GOLANG",
+      "websocket",
+      "stock-market",
+      "trading",
+      "EXPO",
+      "security",
+    ],
+    images: [
+      "https://ik.imagekit.io/4q9e0khee/ChatGPT%20Image%20Apr%2027,%202025,%2011_39_57%20AM.png?updatedAt=1745734348514",        
+    ]  
+  },
+  {
+title:"Agent-01",
+titleLink:"https://github.com/kekubhai/agents1", 
+description:[
+  "Agent-01 is a web-based platform that allows users to create and manage their own agents. It provides a user-friendly interface for creating agents, setting their parameters, and monitoring their performance. The platform is designed to be flexible and scalable, making it suitable for a wide range of applications.",
+],
+hastags:[
+  "reactjs/nextjs",
+  "puppeterjs"
+  ,"web-scraping",
+  "productivity",],
+  
+  images:[
+    "https://ik.imagekit.io/4q9e0khee/ChatGPT%20Image%20Apr%2027,%202025,%2012_13_10%20PM.png?updatedAt=1745736226745"
+  ],
+},
   {
     title: "LinkRoom",
     titleLink: "https://linkroom-livid.vercel.app/",

@@ -103,7 +103,17 @@ export const ProjectSection = () => {
                 </div>
               </Link>
               <div className="text-md space-y-2 text-gray-500">
-           
+                {project.images?.map((image: string) => {
+                  return (
+                    <Image
+                      src={image}
+                      width={300}
+                      height={100}
+                      className="rounded-xl"
+                      alt="logo"
+                    />
+                  )
+                })}
                 {project.description.map((description: string) => {
                   return (
                     <div className="text-md text-gray-500">{description}</div>
